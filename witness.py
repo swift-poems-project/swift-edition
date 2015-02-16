@@ -1,11 +1,8 @@
 
 from lxml import etree
 
-class Witness(etree):
+class Witness():
 
-    def tokenize:
+    def tokenize(self):
 
         pass
-
-
-
