@@ -1,6 +1,7 @@
 
 import pytest
-import witness
+
+from SwiftDiff.witness import Witness
 
 class TestWitness:
 
