@@ -188,24 +188,9 @@ from tornado import gen, queues
 from tornado.options import define, options, parse_command_line
 from tornado_cors import CorsMixin
 
-from SwiftDiff import TextToken
-from SwiftDiff.text import Line, Text, TextJSONEncoder
-from SwiftDiff.collate import DifferenceText, Collation, CollationJSONEncoder, DifferenceTextJSONEncoder
-from SwiftDiff.tokenize import Tokenizer, SwiftSentenceTokenizer
-
-import scss
-scss.config.STATIC_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
-scss.config.ASSETS_ROOT = os.path.join(scss.config.STATIC_ROOT, 'assets/')
-
-from scss.compiler import Compiler
-compiler = Compiler()
-import glob
-
-for scss_file_path in glob.glob(scss.config.STATIC_ROOT + '/scss/**'):
-    css_file_path = re.sub(r'scss', 'css', scss_file_path)
-    css_file = open(css_file_path, 'wb')
-    css_file.write( compiler.compile_string(open(scss_file_path).read()) )
-    css_file.close()
+from swift_collate.collate import DifferenceText, Collation, CollationJSONEncoder, DifferenceTextJSONEncoder
+from swift_collate.text import Line, Text, TextJSONEncoder
+from swift_collate.tokenize import SwiftSentenceTokenizer
 
 MAX_WAIT_SECONDS_BEFORE_SHUTDOWN = 3
 
@@ -226,7 +211,6 @@ db_name = config.get('MongoDB', 'db_name')
 # Retrieve the server configuration
 TEI_DIR_PATH = config.get('server', 'tei_dir_path')
 tei_dir_path = TEI_DIR_PATH
-XSLT_FILE_PATH = config.get('server', 'xslt_file_path')
 DEBUG = config.getboolean('server', 'debug')
 SECRET = config.get('server', 'secret')
 
@@ -575,8 +559,8 @@ def doc_uris(poem_id, transcript_ids = []):
     return uris
 
 
-tokenizer_modules = {'SwiftSentenceTokenizer': 'SwiftDiff.tokenize',
-                     'PunktSentenceTokenizer': 'SwiftDiff.tokenize',
+tokenizer_modules = {'SwiftSentenceTokenizer': 'swift_collate.tokenize',
+                     'PunktSentenceTokenizer': 'swift_collate.tokenize',
                      'TreebankWordTokenizer': 'nltk.tokenize.treebank',
                      'StanfordTokenizer': 'nltk.tokenize.stanford'}
 def tokenizer_module(tokenizer_class_name):
@@ -989,31 +973,6 @@ class TeiHandler(CorsMixin, tornado.web.RequestHandler):
         tei_xml = nota_bene_encoder.transcript('001A', transcript_id)
         self.write(tei_xml)
 
-class TranscriptsHandler(CorsMixin, tornado.web.RequestHandler):
-    """The request handler for collation operations
-
-    """
-
-    def get(self, transcript_id):
-
-        # Retrieve the TEI-XML from the data store
-#        uri = ''
-#        for dirName, subdirList, fileList in os.walk(TEI_DIR_PATH):
-#            for f in fileList:
-#                if fnmatch.fnmatch(f, transcript_id + '.tei.xml'):
-#                    uri = f
-#                    uri = os.path.join(dirName, uri)
-        
-#        super(TranscriptsHandler, self).get(uri)
-#        xslt_doc = etree.parse(XSLT_FILE_PATH)
-#        transform = etree.XSLT(xslt_doc)
-#        doc = etree.parse(uri)
-#        transcript_html_raw = transform(doc)
-#        transcript_html_raw = etree.tostring(transcript_html_raw)
-#        transcript_html = tornado.escape.xhtml_unescape(transcript_html_raw)
-        transcript_html = ''
-        self.render("transcript.html", transcript_html=transcript_html, transcript_id=transcript_id)
-
 class PoemsHandler(CorsMixin, tornado.web.RequestHandler):
     """The request handler for viewing poem variants
 
@@ -1162,7 +1121,6 @@ def main():
             URL(r"/stream/?", CollateSocketHandler, name='stream'),
             URL(r"/collate/?", CollateHandler),
             URL(r"/poems/([^/]+)/?", PoemsHandler, name='poems'),
-            URL(r"/transcripts/([^/]+)/?", TranscriptsHandler, name='transcripts'),
             URL(r"/tei/([^/]+)/?", TeiHandler, name='tei'),
             URL(r"/search/?", SearchHandler)
         ],
