@@ -9,12 +9,8 @@ html, body {
     background-color: #ffffff;
 }
 
-a {
-    color: #ffffff;
-}
-
 .nav-pills > li > a {
-    background-color: #a53a23;
+    background-color: #910029;
     color: #ffffff;
 }
 
@@ -33,12 +29,8 @@ legend {
  * Header
  */
 #header-container {
-    /*
-    background-color: #00bce4;
-    */
-    background-color: #a53a23;
-    color: #ffffff;
     width: 100%;
+    background-color: #ffffff;
 }
 
 #header-container h1, #header-container h2 {
@@ -49,6 +41,13 @@ legend {
 /**
  * Navbar
  */
+#navbar-container {
+    background-color: #910029;
+}
+
+#navbar-menu a {
+    color: #ffffff;
+}
 
 /**
  * Footer
@@ -73,20 +72,8 @@ legend {
  */
 
 #content {
-    /* padding: 24px; */
-    text-align: center;
-}
 
-#project-logo {
-    /*
-    background-color: #00bce4;
-    */
-    /*
-    background-color: #a53a23;
-    border-radius: 64px;
-    padding: 8px;
-    width: 618px;
-    */
+    text-align: center;
 }
 
 /**
@@ -98,27 +85,6 @@ legend {
     height: inherit;
 }
 
-/**
- * Collation interface
- *
- */
-/*
-.table-striped > tbody > tr:nth-child(2n) td {
-    color: #d68378;
-}
-*/
-
-/*
-.table-striped > tbody > tr:nth-child(2n+1) {
-    color: #ffffff;
-    background-color: #d68378;
-}
-*/
-/*
-.table-striped > tbody > tr:nth-child(2n+1) a {
-    text-decoration: underline;
-}
-*/
 
 .table-striped > tbody > tr a {
     color: #a53a23;
@@ -189,12 +155,6 @@ legend {
     background-color: #F2DEDE;    
 }
 
-.gradient-none {
-
-    /*
-      background-color: #F2DEDE;
-      */
-}
 
 #collation-container .table {
     background-color: #ffffff;
@@ -225,18 +185,9 @@ td.token {
 }
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-
     border-top: inherit;
 }
 
-/**
- * Styling for the transcripts
- *
- */
-@font-face {
-    font-family: "Portcullion";
-    src: url("/static/fonts/portcullion.ttf");
-}
 
 #transcript-sidebar {
     bottom: 4%;
@@ -251,7 +202,6 @@ td.token {
 
 .tei-document {
     color: #333333;
-    /*font-family: 'Italianno', cursive;*/
 }
 
 .tei-black-letter {
