@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title><hi rend="italics">Ode to the King</hi><lb/>  ON HIS IRISH EXPEDITION<lb/>  AND THE SUCCESS OF HIS ARMS IN GENERAL</title>
+        <sponsor>Lafayette College</sponsor>
+        <principal>James Woolley</principal>
+        <respStmt>
+          <resp>proof corrected</resp>
+          <resp>proof corrected</resp>
+          <name key="TNiese 25JA11"/>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>Distributed by Digital Scholarship Services at Lafayette College</p>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <additional/>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p/>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="book">
+        <linkGrp type="notes"/>
+        <div n="006-ROGP">
+          <head type="note" n="1" xml:id="spp-006-ROGP-headnote-1">
+            <lg n="1" xml:id="spp-006-ROGP-headnote-1-line-group-1" type="headnote">
+              <l n="1" xml:id="spp-006-ROGP-headnote-1-line-group-1-line-1">&#13;</l>
+            </lg>
+          </head>
+          <head type="note" n="2" xml:id="spp-006-ROGP-headnote-2">
+            <lg n="1" xml:id="spp-006-ROGP-headnote-2-line-group-1" type="headnote">
+              <l n="1" xml:id="spp-006-ROGP-headnote-2-line-group-1-line-1"></l>
+            </lg>
+          </head>
+          <head type="note" n="3" xml:id="spp-006-ROGP-headnote-3">
+            <lg n="1" xml:id="spp-006-ROGP-headnote-3-line-group-1" type="headnote">
+              <l n="1" xml:id="spp-006-ROGP-headnote-3-line-group-1-line-1"></l>
+            </lg>
+          </head>
+          <lg n="1">
+            <l xml:id="swift-006-ROGP-line-1" n="1">Sure there's some wondrous joy in doing good;</l>
+            <l xml:id="swift-006-ROGP-line-2" n="2">Immortal joy, that suffers no allay from fears,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-3" n="3">Nor dreads the tyranny of years,</l>
+            <l xml:id="swift-006-ROGP-line-4" n="4">By none but its possessors to be understood:</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-5" n="5">|Else where's the gain in being great?</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-6" n="6">Kings would indeed be victims of the state;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-7" n="7">What can the poet's humble praise?</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-8" n="8">What can the poet's humble bays?</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-9" n="9">(We poets oft our bays allow,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-10" n="10">Translated to the hero's brow)</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-11" n="11">Add to the victor's happiness?</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-12" n="12">What do the sceptre, crown and ball,</l>
+            <l xml:id="swift-006-ROGP-line-13" n="13">Rattles for infant royalty to play withal,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-14" n="14">But serve t' adorn the baby dress</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-15" n="15">Of one poor coronation day,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-16" n="16">|To make the pageant gay:</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-17" n="17">A three hours' scene of empty pride,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-18" n="18">And then the toys are thrown aside.</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-19" n="19"><lb/>II_But the delight of doing good</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-20" n="20">Is fixed like fate among the stars,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-21" n="21">|And deified in verse;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-22" n="22">'Tis the best gem in royalty,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-23" n="23">The great distinguisher of blood,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-24" n="24">Parent of valour and of fame,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-25" n="25">Which makes a godhead of a name,</l>
+            <l xml:id="swift-006-ROGP-line-26" n="26">And is contemporary to eternity.</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-27" n="27">This made the ancient Romans to afford</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-28" n="28">To <hi rend="italics">valour</hi> and to <hi rend="italics">virtue</hi> the same word:</l>
+            <l xml:id="swift-006-ROGP-line-29" n="29">To show the paths of both must be together trod,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-30" n="30">Before the hero can commence a god.</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-31" n="31"><lb/>III_|These are the ways</l>
+            <l xml:id="swift-006-ROGP-line-32" n="32">By which our happy prince carves out his bays;</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-33" n="33">|Thus he has fixed his name</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-34" n="34">|First, in the mighty list of Fame,</l>
+            <l xml:id="swift-006-ROGP-line-35" n="35">And thus he did the airy goddess court,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-36" n="36">|He sought her out in fight,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-37" n="37">And like a bold romantic knight</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-38" n="38">Rescued her from the giant's fort:</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-39" n="39">The tyrant Death lay crouching down,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-40" n="40">Waiting for orders at his feet,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-41" n="41">|Spoiled of his leaden crown;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-42" n="42">He trampled on this haughty Bajazet,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-43" n="43">|Made him his footstool in the war,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-44" n="44">And a grim slave to wait on his triumphal car.</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-45" n="45"><lb/>IV_|And now I in the spirit see</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-46" n="46">|(The spirit of exalted poetry)</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-47" n="47">|I see the fatal fight begin;</l>
+            <l xml:id="swift-006-ROGP-line-48" n="48">And, lo! where a destroying angel stands,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-49" n="49">|(By all but heaven and me unseen,)</l>
+            <l xml:id="swift-006-ROGP-line-50" n="50">With lightning in his eyes, and thunder in his hands;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-51" n="51">'In vain', said he, 'does utmost Thule boast</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-52" n="52">|No poisonous beast will in her breed,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-53" n="53">||Or no infectious weed,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-54" n="54">When she sends forth such a malignant birth,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-55" n="55">When man himself's the vermin of her earth;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-56" n="56">When Treason there in person seems to stand,</l>
+            <l xml:id="swift-006-ROGP-line-57" n="57">And Rebel is the growth and manufacture of the land.'</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-58" n="58">He spake, and a dark cloud flung o'er his light,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-59" n="59">|And hid him from poetic sight,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-60" n="60">And (I believe) began himself the fight,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-61" n="61">|For straight I saw the field maintained,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-62" n="62">And what I used to laugh at in romance,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-63" n="63">And thought too great even for the effects of chance,</l>
+            <l xml:id="swift-006-ROGP-line-64" n="64">The battle almost by great William's single valour gained;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-65" n="65">The angel (doubtless) kept the eternal gate,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-66" n="66">|And stood twixt him and every fate;</l>
+            <l xml:id="swift-006-ROGP-line-67" n="67">And all those flying deaths that aimed him from the field,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-68" n="68">|(The impartial deaths which come</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-69" n="69">|Like love, wrapped up in fire;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-70" n="70">And like that too, make every breast their home)</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-71" n="71">|Broke on his everlasting shield.</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-72" n="72"><lb/>V_|The giddy British populace,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-73" n="73">||That tyrant guard on Peace,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-74" n="74">||Who watch her like a prey,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-75" n="75">|And keep her for a sacrifice,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-76" n="76">And must be sung, like Argus, into ease</l>
+            <l xml:id="swift-006-ROGP-line-77" n="77">Before this milk-white heifer can be stole away,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-78" n="78">Our prince has charmed its many hundred eyes;</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-79" n="79">|Has lulled the monster in a deep</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-80" n="80">|And (I hope) an eternal sleep,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-81" n="81">And has at last redeemed the mighty prize.</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-82" n="82">The Scots themselves, that discontented brood,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-83" n="83">Who always loudest for religion brawl,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-84" n="84">|(As those do still wh'have none at all)</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-85" n="85">Who claim so many titles to be Jews,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-86" n="86">(But, surely such whom God did never for his people choose)</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-87" n="87">|Still murmuring in their wilderness for food,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-88" n="88">|Who pine us like a chronical disease;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-89" n="89">And one would think 'twere past omnipotence to please;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-90" n="90">Your presence all their native stubbornness controls,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-91" n="91">And for a while unbends their contradicting souls:</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-92" n="92">||As in old fabulous hell,</l>
+            <l xml:id="swift-006-ROGP-line-93" n="93">When some patrician god would visit the immortal gaol,</l>
+            <l xml:id="swift-006-ROGP-line-94" n="94">om.</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-95" n="95">||The very brightness of his face</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-96" n="96">Suspended every horror of the place,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-97" n="97">The giants under Etna ceased to groan,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-98" n="98">And Sisyphus lay sleeping on his stone.</l>
+            <l xml:id="swift-006-ROGP-line-99" n="99">Thus has our prince completed every victory,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-100" n="100">||And glad Iërne now may see</l>
+            <l xml:id="swift-006-ROGP-line-101" n="101">Her sister isles are conquered too as well as she.</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-102" n="102"><lb/>VI_How vainly (sir) did your fond enemy try</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-103" n="103">Upon a rubbish heap of broken laws</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-104" n="104">||To climb at victory</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-105" n="105">||Without the footing of a cause;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-106" n="106">His laurel now must only be a cypress wreath,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-107" n="107">|And his best victory a noble death;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-108" n="108">His scrap of life is but a heap of miseries,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-109" n="109">||The remnant of a falling snuff,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-110" n="110">||Which hardly wants another puff,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-111" n="111">|And needs must <hi rend="italics">stink</hi> whene'er it dies;</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-112" n="112">|Whilst at your victorious light</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-113" n="113">||All lesser ones expire,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-114" n="114">|Consume, and perish from our sight,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-115" n="115">|Just as the sun puts out a fire;</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-116" n="116">And every foolish fly that dares to aim</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-117" n="117">|To buzz about the mighty flame;</l>
+            <l xml:id="swift-006-ROGP-line-118" n="118">The wretched insects singe their wings, and fall,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-119" n="119">And humbly at the bottom crawl.</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-120" n="120"><lb/>VII_|That restless tyrant, who of late</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-121" n="121">|Is grown so impudently great,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-122" n="122">||That tennis-ball of fate;</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-123" n="123">|This gilded meteor which flies</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-124" n="124">|As if it meant to touch the skies;</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-125" n="125">||For all its boasted height,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-126" n="126">|For all its plagiary light,</l>
+            <l rend="indent(3)" xml:id="swift-006-ROGP-line-127" n="127">||Took its first growth and birth</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-128" n="128">|From the worst excrements of earth;</l>
+            <l xml:id="swift-006-ROGP-line-129" n="129">Stay but a little while and down again 'twill come,</l>
+            <l xml:id="swift-006-ROGP-line-130" n="130">And end as it began, in vapour, stink, and scum.</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-131" n="131">Or has he like some fearful star appeared?</l>
+            <l xml:id="swift-006-ROGP-line-132" n="132">Long dreaded for his bloody tail and fiery beard,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-133" n="133">Transcending nature's ordinary laws,</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-134" n="134">|Sent by just heaven to threaten earth</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-135" n="135">|With war, and pestilence, and dearth,</l>
+            <l xml:id="swift-006-ROGP-line-136" n="136">Of which it is at once the prophet and the cause.</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-137" n="137">|Howe'er it be, the pride of France</l>
+            <l rend="indent(2)" xml:id="swift-006-ROGP-line-138" n="138">|Has finished its short race of chance,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-139" n="139">And all her boasted influences are</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-140" n="140">Wrapped in the vortex of the British star;</l>
+            <l xml:id="swift-006-ROGP-line-141" n="141">Her tyrant too an unexpected wound shall feel</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-142" n="142">In the last wretched remnant of his days;</l>
+            <l xml:id="swift-006-ROGP-line-143" n="143">Our prince has hit him, like Achilles, in the heel,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-144" n="144">The poisonous darts has made him reel,</l>
+            <l rend="indent(1)" xml:id="swift-006-ROGP-line-145" n="145">Giddy he grows, and down is hurled,</l>
+            <l xml:id="swift-006-ROGP-line-146" n="146">And as a mortal to his vile disease,</l>
+            <l xml:id="swift-006-ROGP-line-147" n="147">Falls sick in the posteriors of the world.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

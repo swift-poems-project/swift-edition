@@ -92,115 +92,14 @@ def validate_sources():
                     print "Error: %s" % str(e)
                     print "Trace: %s" % traceback.format_exc()
 
-# @todo Deduplicate
-def doc_uris(poem_id, transcript_ids = []):
-    """Retrieve the transcript file URI's for any given poem
-
-    :param poem_id: The ID for the poem.
-    :type poem_id: str.
-
-    :param transcript_ids: The ID's for the transcript documents.
-    :type transcript_ids: list.
-    """
-
-    # Initialize for only the requested transcripts
-    if len(transcript_ids) > 0:
-        transcript_paths = [None] * len(transcript_ids)
-    else:
-        transcript_paths = []
-
-    for f in os.listdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'xml', poem_id + '/')):
-
-        if fnmatch.fnmatch(f, '*.tei.xml') and f[0] != '.':
-            # Filter and sort for only the requested transcripts
-            if len(transcript_ids) > 0:
-                path = re.sub(r'\.tei\.xml$', '', f)
-                if path in transcript_ids:
-                    i = transcript_ids.index( path )
-                    transcript_paths[i] = f
-            else:
-                transcript_paths.append(f)
-
-    # Provide a default ordering for the transcripts
-    if len(transcript_ids) == 0:
-
-        transcript_paths.sort()
-
-    uris = map(lambda path: os.path.join(os.path.dirname(os.path.abspath(__file__)), 'xml', poem_id + '/', path), transcript_paths)
-    return uris
-
-# @todo Deduplicate
-def resolve(uri, update=False):
-    """Resolves resources given a URI
-    
-    :param uri: The URL or URI for a file-system-based resource.
-    :type uri: str.
-    :param update: Should the cache be repopulated?
-    :type uri: bool.
-    :returns:  etree._Element -- the <tei:text> Element.
-
-    """
-
-    # Check the cache only if this is *NOT* a file-system resource
-#    if re.match(r'^file\:\/\/', uri):
-
-#        return Tokenizer.parse_text(uri)
-
-#    doc = cache_db['texts'].find_one({'uri': uri})
-    doc = None
-
-    if not update and doc:
-        result = etree.xml(doc['text'])
-    else:
-        # Otherwise, a web request may be issued for the resource
-        result = Tokenizer.parse_text(uri)
-        
-        # Cache the resource
-#        cache_db['texts'].replace_one({'uri': uri}, {'text': etree.tostring(result)}, upsert=True)
-
-    return result
-
-
-def cache(collection_name, key, value=None):
-
-    db = client['swift_collate']
-    collection = db[collection_name]
-
-    if value is None:
-        print 'searching the cache with %s' % key
-
-        doc = collection.find_one(key)
-        if doc is None:
-            return None
-        cached = pickle.loads(doc['data'])
-    else:
-        print 'caching %s' % key
-        cached = pickle.dumps(value)
-
-        data = key.copy()
-        data.update({'data': Binary(cached)})
-
-        collection.find_one_and_replace(key, data, upsert=True)
-
-    return cached
-
 def collate(base_text, witness_texts, poem_id, base_id):
 
-    key = {'base_text': base_id}
+    # Collate the witnesses in parallel
+    diff_args = map( lambda witness_text: (base_text, witness_text), witness_texts )
+    diffs = map( compare, diff_args )
 
-    # Attempt to retrieve this from the cache
-    doc = cache('collation_cache', key)
-    if doc is None:
-        # Collate the witnesses in parallel
-        diff_args = map( lambda witness_text: (base_text, witness_text), witness_texts )
-        diffs = map( compare, diff_args )
-
-        tei_dir_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'xml', poem_id)
-        result = Collation(base_text, diffs, tei_dir_path)
-        cache('collation_cache', key, result)
-
-    else:
-        result = doc
+    tei_dir_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'xml', poem_id)
+    result = Collation(base_text, diffs, tei_dir_path)
 
     return result
 
@@ -214,9 +113,6 @@ def compare(_args, update=False):
 
     base_text = _args[0]
     other_text = _args[1]
-
-    # Attempt to retrieve the results from the cache
-    # doc = cache_db['diff_texts'].find_one({'uri': uri})
 
     diff = DifferenceText(base_text, other_text, SwiftSentenceTokenizer)
     
